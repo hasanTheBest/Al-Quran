@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Al Quran</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amiri:400,700&amp;subset=arabic,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-light fixed-top justify-content-between" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="sura-single.html">Al Quran</a>
+        <form class="form-inline ">
+            <button class="btn btn-outline-success btn-query mr-2" type="button" data-toggle="modal" data-target="#query-modal">Go to Ayah</button>
+            <button class="btn btn-info" type="button" data-toggle="modal" data-target="#index">Chapters</button>
+        </form>
+    </nav>
+    <!-- SEARCH TEXT -->
+    <div class="container search-word py-5">
+        <div class="row">
+            <div class="col">
+                <form class="form-inline justify-content-center search-word-form">
+                    <div class="form-group mx-sm-3 mb-2 w-75">
+                        <label for="inputText" class="sr-only">Text</label>
+                        <input type="text" class="form-control w-100" id="inputText" placeholder="Search Word 'Noah'" name="word" required>
+                    </div>
+                    <button type="submit" class="btn btn-outline-info mb-2">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Index -->
+    <div class="modal fade chapter-modal" id="index" tabindex="-1" role="dialog" aria-labelledby="index" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">All Chapters</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-responsive table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">English</th>
+                                <th scope="col">Translation(en)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="chapters">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL QUERY -->
+    <div class="modal search-modal fade" id="query-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Query Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-danger">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="query-form" id="query-quran">
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <label class="sr-only" for="suraNameSelect">Sura Name Select</label>
+                                <select class="form-control" id="suraNameSelect" form="query-quran" name="suraid">
+                                </select>
+                            </div>
+                            <input type="number" class="form-control" aria-label="Number field with select element" placeholder="Verse Number" name="ayahno" min="1" required autofocus>
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" value="Submit Query" class="btn btn-outline-info">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quran-loader text-center">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="footer text-center my-3 text-success">
+        All Rights Reserved &copy; <a target="_blank" class="text-info" href="https://linkedin.com/in/m-hasan-ru">Mahmudul Hasan</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/single.js"></script>
+</body>
+
+</html>
