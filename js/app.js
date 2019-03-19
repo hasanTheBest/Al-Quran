@@ -113,8 +113,6 @@ function renderAyahs(sura) {
                     btnTranslation = '',
                     btnTranslationToggle = '';
 
-
-
                 response.data.ayahs.map(function(ayah, i) {
 
                     i = i + 1;
@@ -378,16 +376,11 @@ function renderSearchWordResult(data) {
 
     data.matches.map(function(match) {
         $('ol.ayahs').append(`
-                <li class="list-group-item bg-light" ayahno ="${match.number}">
-                        <p class='translation text-english text-left'>
-                            <b class="text-secondary">${match.surah.number}. ${match.surah.englishName}: ${match.numberInSurah}</b><br>
-                         ${match.text}</p>
-                </li>`);
+            <li class="list-group-item bg-light" ayahno ="${match.number}">
+                    <p class='translation text-english text-left'>
+                        <b class="text-secondary">${match.surah.number}. ${match.surah.englishName}: ${match.numberInSurah}</b><br>
+                     ${match.text}</p>
+            </li>`);
     });
 
-    $("ol.ayahas > li").each(function(i, ele) {
-        var surano = $(this).attr('ayahno');
-        console.log(surano);
-        console.log('ho ');
-    });
 }
