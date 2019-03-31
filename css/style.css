@@ -1,15 +1,11 @@
-:root {
-    --primary: #2ca4ab;
-    --info: #2ca4ab;
-    --secondary: #939598;
-}
-
 body{
 	font-family: Montserrat, sans-serif;
 	color: #333333;
     padding-top: 56px;
 }
-
+main, footer{
+    display: none;
+}
 p.translation{
 	margin-bottom: .2rem;
 	font-size: 1rem;
@@ -45,9 +41,6 @@ p.translation{
 	font-family: "Times New Roman", sans-serif;
 }
 
-/* QUERY FORM */
-
-
 /* CSS3 LOADING EFFECT */
 .quran-loader {
     position: absolute;
@@ -80,7 +73,7 @@ p.translation{
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #fff;
+    background: #117a8b;
     margin: -3px 0 0 -3px;
 }
 

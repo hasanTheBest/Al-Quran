@@ -1,20 +1,19 @@
 jQuery(document).ready(function($) {
     var suraid = 1;
-    ajaxLoad(suraid);
-    loadChapters();
-
+    quranLoad(suraid);
 });
 
 var fbLoaderEffect = `<div class="translation-loader text-left"><div class="lds-facebook"><div></div><div></div><div></div></div></div>`;
 
-// LOAD AJAX AT FIRST
-function ajaxLoad(id) {
+// LOAD Al QURAN WITH SINGLE SURA AT FIRST
+function quranLoad(id) {
     $.ajax({
         url: 'http://api.alquran.cloud/v1/surah/' + id,
         method: 'GET',
         type: 'JSON',
         success: function(response) {
-            $('.quran-loader').hide(100);
+            $('.quran-loader').hide();
+            $('main, footer').fadeIn();
             renderAyahs(response.data);
 
         },
@@ -24,38 +23,10 @@ function ajaxLoad(id) {
     })
 }
 
-// LOAD CHAPTERS
-function loadChapters() {
-    $.ajax({
-        url: 'http://api.alquran.cloud/v1/surah',
-        method: 'GET',
-        type: 'JSON',
-        success: function(response) {
-            response.data.map(function(surah) {
-                var chapter = `
-                        <tr>
-                            <th scope="row">${surah.number}</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(${surah.number})" >${surah.name}</a></td>
-                            <td>${surah.englishName}</td>
-                            <td>${surah.englishNameTranslation}</td>
-                        </tr>`;
-
-                $('.chapters').append(chapter)
-            });
-
-        },
-        error: function(err) {
-            console.log('An Error Occured:  ' + err);
-        }
-    })
-
-}
 
 // RENDER AYAHAS
 function renderAyahs(sura) {
-    var output = `<div class="render-ayahas container text-center">
-        <div class="row surah-single">
-            <div class="col">
+    var output = `
                 <div class="jumbotron">
                     <h1 class="display-5 sura-name"><span class="badge badge-info">${sura.number}</span> ${sura.name}  ${sura.englishName} (${sura.englishNameTranslation})</h1>
                     <p class="sura-meta text-center">Total Ayahas: <b>${sura.numberOfAyahs}</b> | Revelation Type: <b>${sura.revelationType}</b></p>
@@ -80,10 +51,8 @@ function renderAyahs(sura) {
 
     output += `
                 </ol>
-            </div>
-            </div>
-        </div>`;
-    $('.search-word').after(output);
+            `;
+    $('.render-ayahas .ayah-col').append(output);
 
     // hide bismillah
     if (sura.number == 1 || sura.number == 9) {
@@ -178,40 +147,24 @@ function renderAyahs(sura) {
 
 // RENDER SURA BY NAME
 function loadSura(id) {
-    $('.render-ayahas').hide(200);
+    $('.render-ayahas .ayah-col *').remove();
+    $('main, footer').fadeOut();
     $('.chapter-modal').modal('hide');
-    $('.quran-loader').show(100);
-    ajaxLoad(id);
+    $('.quran-loader').show();
+    quranLoad(id);
 }
 
-// REPLACE 
+// REPLACE BISMILLAH FORM 1 AND 9 NO SURA
 function replaceBismillah(txt) {
     var text = txt.replace('بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ', '');
     return text;
 }
 
-// GENERATE QUERY FORM FIELD
-$('.btn-query').on('click', function() {
-    $.ajax({
-        url: 'http://api.alquran.cloud/v1/surah',
-        method: 'GET',
-        type: 'JSON',
-        success: function(response) {
-            response.data.map(function(sura) {
-                $('#suraNameSelect').append(`<option value="${sura.number}" ayahs="${sura.numberOfAyahs}">${sura.number}. ${sura.englishName}  (${sura.numberOfAyahs})</option>`);
-            });
-        },
-        error: function(err) {
-            console.log(err);
-        }
-    })
-})
-
-
-
-// RUN QUERY
+// RUN QUER BY AYAH NO 
 $('#query-quran').on('submit', function(e) {
     e.preventDefault();
+    $('.alert-danger .close-danger-text').alert('close');
+
     var para = {};
     $(this).find('[name]').each(function(i, element) {
         var that = $(this),
@@ -223,26 +176,22 @@ $('#query-quran').on('submit', function(e) {
 
     $('.btn-group-single-ayah').hide();
 
-    // validation - make sure value does not exceds total ayah of the sura
-    $(this).find('[ayahs]').each(function(i, value) {
-        var that = $(this);
-        i = i + 1;
-        if (i == para.suraid) {
-            var totalAayahInSura = that.attr('ayahs');
-            if (para.ayahno > totalAayahInSura || para.ayahno === 0) {
-                $("input[name='ayahno']").after(`
+    // validation - make sure value does not exced total ayah of the sura
+    var sid = para.suraid;
+    var totalAayahInSura = $("#suraNameSelect option:nth-child(" + sid + ")").attr('ayahs');
+
+    if (para.ayahno > Number(totalAayahInSura)) {
+        $("input[name='ayahno']").after(`
                         <div class="alert alert-danger w-100 mt-2" role="alert">
-                            Value should be in range 1 to ${totalAayahInSura}
-                            <button type="button" class="close text-danger" data-dismiss="alert" aria-label="Close">
+                            Value should be in the range 1 to ${totalAayahInSura}
+                            <button type="button" class="close text-danger close-danger-text" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>`);
+    } else {
+        showSingleAyah(para.suraid, para.ayahno);
 
-            } else {
-                showSingleAyah(para.suraid, para.ayahno);
-            }
-        }
-    })
+    }
 
 })
 
@@ -251,8 +200,9 @@ $('#query-quran').on('submit', function(e) {
 function showSingleAyah(suraid, ayahno) {
 
     $('#query-modal').modal('hide');
-    $('.btn-group-handler').hide(200);
-    $('ol.ayahs > li').hide(200);
+    $('.btn-group-handler').remove();
+    $('ol.ayahs > li').remove();
+    $('main, footer').fadeOut();
     $('.quran-loader').show();
 
     $.ajax({
@@ -268,15 +218,16 @@ function showSingleAyah(suraid, ayahno) {
 
             $('.jumbotron .sura-meta').html(`Total Ayahas: <b>${response.data.surah.numberOfAyahs}</b> | Revelation Type: <b>${response.data.surah.revelationType}</b> | Juz: <b>${response.data.juz}</b> | Ruku: <b>${response.data.ruku}</b> | Sajda: <b>${response.data.sajda}</b>`);
 
-            // hide loader
-            $('.quran-loader').hide();
-
             // add new button group and buttons for single ayah
             $('.jumbotron').after(`<div class="btn-group-single-ayah"></div>`)
             $('.btn-group-single-ayah').append(`<button type="button" class="btn btn-outline-info btn-singl-ayah-eng" onclick="singleAyahEngBnReTr(${response.data.number}, 'en.sahih')">English</button>`);
             $('.btn-group-single-ayah').append(`<button type="button" class="btn btn-outline-success btn-singl-ayah-bn" onclick="singleAyahEngBnReTr(${response.data.number}, 'bn.bengali')">Bangla</button>`);
             $('.btn-group-single-ayah').append(`<button type="button" class="btn btn-outline-primary btn-singl-ayah-recite" onclick="singleAyahEngBnReTr(${response.data.number}, 'ar.alafasy')">Recitation</button>`)
             $('.btn-group-single-ayah').append(`<button type="button" class="btn btn-outline-danger btn-singl-ayah-transliteration" onclick="singleAyahEngBnReTr(${response.data.number}, 'en.transliteration')">Transliteration</button>`);
+
+            // hide loader
+            $('.quran-loader').hide();
+            $('main, footer').fadeIn();
         },
         error: function(err) {
             console.log(err);
@@ -334,7 +285,7 @@ function singleAyahEngBnReTr(ayahno, engBnReTr) {
     })
 }
 
-// ADD SEARCH WORD 
+// SEARCH BY WORD 
 $('.search-word-form').on('submit', function(e) {
     e.preventDefault();
     $('.btn-group-handler').hide(200);
@@ -369,17 +320,17 @@ $('.search-word-form').on('submit', function(e) {
     })
 })
 
-// RENDER SEARCH TEXT
+// RENDER SEARCHED WORD INCLUCDING AYAH
 function renderSearchWordResult(data) {
     $('.quran-loader').hide();
-    $('.jumbotron .sura-meta').html(`Total <b class="text-info">${data.count}</b> words matches from the noble Quran (Sahih International).`).show();
+    $('.jumbotron .sura-meta').html(`Total <b class="text-info">${data.count}</b> words found from the noble Quran (Sahih International).`).show();
 
     data.matches.map(function(match) {
         $('ol.ayahs').append(`
             <li class="list-group-item bg-light" ayahno ="${match.number}">
-                    <p class='translation text-english text-left'>
-                        <b class="text-secondary">${match.surah.number}. ${match.surah.englishName}: ${match.numberInSurah}</b><br>
-                     ${match.text}</p>
+                <p class='translation text-english text-left'>
+                    <b class="text-secondary">${match.surah.number}. ${match.surah.englishName}: ${match.numberInSurah}</b><br>
+                 ${match.text}</p>
             </li>`);
     });
 
