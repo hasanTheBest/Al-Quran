@@ -10,7 +10,8 @@ function quranLoad(id) {
     $.ajax({
         url: 'http://api.alquran.cloud/v1/surah/' + id,
         method: 'GET',
-        type: 'JSON',
+        crossDomain: true,
+        dataType: 'json',
         success: function(response) {
             $('.quran-loader').hide();
             $('main, footer').fadeIn();
