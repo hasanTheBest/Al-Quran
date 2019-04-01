@@ -10,7 +10,6 @@
 </head>
 
 <body class="bg-dark">
-    
     <!-- LAODDING EFFECT -->
     <div class="quran-loader text-center">
         <div class="lds-roller">
@@ -24,865 +23,6 @@
             <div></div>
         </div>
     </div>
-
-   <!--  Modal CHAPTERS -->
-    <div class="modal fade chapter-modal" id="index" tabindex="-1" role="dialog" aria-labelledby="index" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">All Chapters</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <table class="table table-responsive table-hover">
-                        <thead class="thead-light">
-                            <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">English</th>
-                                <th scope="col">Translation(en)</th>
-                            </tr>
-                        </thead>
-                        <tbody class="chapters">
-                        
-                        <tr>
-                            <th scope="row">1</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(1)">سورة الفاتحة</a></td>
-                            <td>Al-Faatiha</td>
-                            <td>The Opening</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(2)">سورة البقرة</a></td>
-                            <td>Al-Baqara</td>
-                            <td>The Cow</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(3)">سورة آل عمران</a></td>
-                            <td>Aal-i-Imraan</td>
-                            <td>The Family of Imraan</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(4)">سورة النساء</a></td>
-                            <td>An-Nisaa</td>
-                            <td>The Women</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(5)">سورة المائدة</a></td>
-                            <td>Al-Maaida</td>
-                            <td>The Table</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(6)">سورة الأنعام</a></td>
-                            <td>Al-An'aam</td>
-                            <td>The Cattle</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(7)">سورة الأعراف</a></td>
-                            <td>Al-A'raaf</td>
-                            <td>The Heights</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(8)">سورة الأنفال</a></td>
-                            <td>Al-Anfaal</td>
-                            <td>The Spoils of War</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(9)">سورة التوبة</a></td>
-                            <td>At-Tawba</td>
-                            <td>The Repentance</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">10</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(10)">سورة يونس</a></td>
-                            <td>Yunus</td>
-                            <td>Jonas</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">11</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(11)">سورة هود</a></td>
-                            <td>Hud</td>
-                            <td>Hud</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">12</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(12)">سورة يوسف</a></td>
-                            <td>Yusuf</td>
-                            <td>Joseph</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">13</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(13)">سورة الرعد</a></td>
-                            <td>Ar-Ra'd</td>
-                            <td>The Thunder</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">14</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(14)">سورة ابراهيم</a></td>
-                            <td>Ibrahim</td>
-                            <td>Abraham</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">15</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(15)">سورة الحجر</a></td>
-                            <td>Al-Hijr</td>
-                            <td>The Rock</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">16</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(16)">سورة النحل</a></td>
-                            <td>An-Nahl</td>
-                            <td>The Bee</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">17</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(17)">سورة الإسراء</a></td>
-                            <td>Al-Israa</td>
-                            <td>The Night Journey</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">18</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(18)">سورة الكهف</a></td>
-                            <td>Al-Kahf</td>
-                            <td>The Cave</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">19</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(19)">سورة مريم</a></td>
-                            <td>Maryam</td>
-                            <td>Mary</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">20</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(20)">سورة طه</a></td>
-                            <td>Taa-Haa</td>
-                            <td>Taa-Haa</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">21</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(21)">سورة الأنبياء</a></td>
-                            <td>Al-Anbiyaa</td>
-                            <td>The Prophets</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">22</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(22)">سورة الحج</a></td>
-                            <td>Al-Hajj</td>
-                            <td>The Pilgrimage</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">23</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(23)">سورة المؤمنون</a></td>
-                            <td>Al-Muminoon</td>
-                            <td>The Believers</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">24</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(24)">سورة النور</a></td>
-                            <td>An-Noor</td>
-                            <td>The Light</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">25</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(25)">سورة الفرقان</a></td>
-                            <td>Al-Furqaan</td>
-                            <td>The Criterion</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">26</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(26)">سورة الشعراء</a></td>
-                            <td>Ash-Shu'araa</td>
-                            <td>The Poets</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">27</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(27)">سورة النمل</a></td>
-                            <td>An-Naml</td>
-                            <td>The Ant</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">28</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(28)">سورة القصص</a></td>
-                            <td>Al-Qasas</td>
-                            <td>The Stories</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">29</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(29)">سورة العنكبوت</a></td>
-                            <td>Al-Ankaboot</td>
-                            <td>The Spider</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">30</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(30)">سورة الروم</a></td>
-                            <td>Ar-Room</td>
-                            <td>The Romans</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">31</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(31)">سورة لقمان</a></td>
-                            <td>Luqman</td>
-                            <td>Luqman</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">32</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(32)">سورة السجدة</a></td>
-                            <td>As-Sajda</td>
-                            <td>The Prostration</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">33</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(33)">سورة الأحزاب</a></td>
-                            <td>Al-Ahzaab</td>
-                            <td>The Clans</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">34</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(34)">سورة سبإ</a></td>
-                            <td>Saba</td>
-                            <td>Sheba</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">35</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(35)">سورة فاطر</a></td>
-                            <td>Faatir</td>
-                            <td>The Originator</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">36</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(36)">سورة يس</a></td>
-                            <td>Yaseen</td>
-                            <td>Yaseen</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">37</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(37)">سورة الصافات</a></td>
-                            <td>As-Saaffaat</td>
-                            <td>Those drawn up in Ranks</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">38</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(38)">سورة ص</a></td>
-                            <td>Saad</td>
-                            <td>The letter Saad</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">39</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(39)">سورة الزمر</a></td>
-                            <td>Az-Zumar</td>
-                            <td>The Groups</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">40</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(40)">سورة غافر</a></td>
-                            <td>Ghafir</td>
-                            <td>The Forgiver</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">41</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(41)">سورة فصلت</a></td>
-                            <td>Fussilat</td>
-                            <td>Explained in detail</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">42</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(42)">سورة الشورى</a></td>
-                            <td>Ash-Shura</td>
-                            <td>Consultation</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">43</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(43)">سورة الزخرف</a></td>
-                            <td>Az-Zukhruf</td>
-                            <td>Ornaments of gold</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">44</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(44)">سورة الدخان</a></td>
-                            <td>Ad-Dukhaan</td>
-                            <td>The Smoke</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">45</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(45)">سورة الجاثية</a></td>
-                            <td>Al-Jaathiya</td>
-                            <td>Crouching</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">46</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(46)">سورة الأحقاف</a></td>
-                            <td>Al-Ahqaf</td>
-                            <td>The Dunes</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">47</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(47)">سورة محمد</a></td>
-                            <td>Muhammad</td>
-                            <td>Muhammad</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">48</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(48)">سورة الفتح</a></td>
-                            <td>Al-Fath</td>
-                            <td>The Victory</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">49</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(49)">سورة الحجرات</a></td>
-                            <td>Al-Hujuraat</td>
-                            <td>The Inner Apartments</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">50</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(50)">سورة ق</a></td>
-                            <td>Qaaf</td>
-                            <td>The letter Qaaf</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">51</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(51)">سورة الذاريات</a></td>
-                            <td>Adh-Dhaariyat</td>
-                            <td>The Winnowing Winds</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">52</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(52)">سورة الطور</a></td>
-                            <td>At-Tur</td>
-                            <td>The Mount</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">53</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(53)">سورة النجم</a></td>
-                            <td>An-Najm</td>
-                            <td>The Star</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">54</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(54)">سورة القمر</a></td>
-                            <td>Al-Qamar</td>
-                            <td>The Moon</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">55</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(55)">سورة الرحمن</a></td>
-                            <td>Ar-Rahmaan</td>
-                            <td>The Beneficent</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">56</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(56)">سورة الواقعة</a></td>
-                            <td>Al-Waaqia</td>
-                            <td>The Inevitable</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">57</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(57)">سورة الحديد</a></td>
-                            <td>Al-Hadid</td>
-                            <td>The Iron</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">58</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(58)">سورة المجادلة</a></td>
-                            <td>Al-Mujaadila</td>
-                            <td>The Pleading Woman</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">59</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(59)">سورة الحشر</a></td>
-                            <td>Al-Hashr</td>
-                            <td>The Exile</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">60</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(60)">سورة الممتحنة</a></td>
-                            <td>Al-Mumtahana</td>
-                            <td>She that is to be examined</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">61</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(61)">سورة الصف</a></td>
-                            <td>As-Saff</td>
-                            <td>The Ranks</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">62</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(62)">سورة الجمعة</a></td>
-                            <td>Al-Jumu'a</td>
-                            <td>Friday</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">63</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(63)">سورة المنافقون</a></td>
-                            <td>Al-Munaafiqoon</td>
-                            <td>The Hypocrites</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">64</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(64)">سورة التغابن</a></td>
-                            <td>At-Taghaabun</td>
-                            <td>Mutual Disillusion</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">65</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(65)">سورة الطلاق</a></td>
-                            <td>At-Talaaq</td>
-                            <td>Divorce</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">66</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(66)">سورة التحريم</a></td>
-                            <td>At-Tahrim</td>
-                            <td>The Prohibition</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">67</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(67)">سورة الملك</a></td>
-                            <td>Al-Mulk</td>
-                            <td>The Sovereignty</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">68</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(68)">سورة القلم</a></td>
-                            <td>Al-Qalam</td>
-                            <td>The Pen</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">69</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(69)">سورة الحاقة</a></td>
-                            <td>Al-Haaqqa</td>
-                            <td>The Reality</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">70</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(70)">سورة المعارج</a></td>
-                            <td>Al-Ma'aarij</td>
-                            <td>The Ascending Stairways</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">71</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(71)">سورة نوح</a></td>
-                            <td>Nooh</td>
-                            <td>Noah</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">72</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(72)">سورة الجن</a></td>
-                            <td>Al-Jinn</td>
-                            <td>The Jinn</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">73</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(73)">سورة المزمل</a></td>
-                            <td>Al-Muzzammil</td>
-                            <td>The Enshrouded One</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">74</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(74)">سورة المدثر</a></td>
-                            <td>Al-Muddaththir</td>
-                            <td>The Cloaked One</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">75</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(75)">سورة القيامة</a></td>
-                            <td>Al-Qiyaama</td>
-                            <td>The Resurrection</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">76</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(76)">سورة الانسان</a></td>
-                            <td>Al-Insaan</td>
-                            <td>Man</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">77</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(77)">سورة المرسلات</a></td>
-                            <td>Al-Mursalaat</td>
-                            <td>The Emissaries</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">78</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(78)">سورة النبإ</a></td>
-                            <td>An-Naba</td>
-                            <td>The Announcement</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">79</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(79)">سورة النازعات</a></td>
-                            <td>An-Naazi'aat</td>
-                            <td>Those who drag forth</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">80</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(80)">سورة عبس</a></td>
-                            <td>Abasa</td>
-                            <td>He frowned</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">81</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(81)">سورة التكوير</a></td>
-                            <td>At-Takwir</td>
-                            <td>The Overthrowing</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">82</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(82)">سورة الإنفطار</a></td>
-                            <td>Al-Infitaar</td>
-                            <td>The Cleaving</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">83</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(83)">سورة المطففين</a></td>
-                            <td>Al-Mutaffifin</td>
-                            <td>Defrauding</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">84</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(84)">سورة الإنشقاق</a></td>
-                            <td>Al-Inshiqaaq</td>
-                            <td>The Splitting Open</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">85</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(85)">سورة البروج</a></td>
-                            <td>Al-Burooj</td>
-                            <td>The Constellations</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">86</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(86)">سورة الطارق</a></td>
-                            <td>At-Taariq</td>
-                            <td>The Morning Star</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">87</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(87)">سورة الأعلى</a></td>
-                            <td>Al-A'laa</td>
-                            <td>The Most High</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">88</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(88)">سورة الغاشية</a></td>
-                            <td>Al-Ghaashiya</td>
-                            <td>The Overwhelming</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">89</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(89)">سورة الفجر</a></td>
-                            <td>Al-Fajr</td>
-                            <td>The Dawn</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">90</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(90)">سورة البلد</a></td>
-                            <td>Al-Balad</td>
-                            <td>The City</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">91</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(91)">سورة الشمس</a></td>
-                            <td>Ash-Shams</td>
-                            <td>The Sun</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">92</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(92)">سورة الليل</a></td>
-                            <td>Al-Lail</td>
-                            <td>The Night</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">93</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(93)">سورة الضحى</a></td>
-                            <td>Ad-Dhuhaa</td>
-                            <td>The Morning Hours</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">94</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(94)">سورة الشرح</a></td>
-                            <td>Ash-Sharh</td>
-                            <td>The Consolation</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">95</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(95)">سورة التين</a></td>
-                            <td>At-Tin</td>
-                            <td>The Fig</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">96</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(96)">سورة العلق</a></td>
-                            <td>Al-Alaq</td>
-                            <td>The Clot</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">97</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(97)">سورة القدر</a></td>
-                            <td>Al-Qadr</td>
-                            <td>The Power, Fate</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">98</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(98)">سورة البينة</a></td>
-                            <td>Al-Bayyina</td>
-                            <td>The Evidence</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">99</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(99)">سورة الزلزلة</a></td>
-                            <td>Az-Zalzala</td>
-                            <td>The Earthquake</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">100</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(100)">سورة العاديات</a></td>
-                            <td>Al-Aadiyaat</td>
-                            <td>The Chargers</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">101</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(101)">سورة القارعة</a></td>
-                            <td>Al-Qaari'a</td>
-                            <td>The Calamity</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">102</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(102)">سورة التكاثر</a></td>
-                            <td>At-Takaathur</td>
-                            <td>Competition</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">103</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(103)">سورة العصر</a></td>
-                            <td>Al-Asr</td>
-                            <td>The Declining Day, Epoch</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">104</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(104)">سورة الهمزة</a></td>
-                            <td>Al-Humaza</td>
-                            <td>The Traducer</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">105</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(105)">سورة الفيل</a></td>
-                            <td>Al-Fil</td>
-                            <td>The Elephant</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">106</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(106)">سورة قريش</a></td>
-                            <td>Quraish</td>
-                            <td>Quraysh</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">107</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(107)">سورة الماعون</a></td>
-                            <td>Al-Maa'un</td>
-                            <td>Almsgiving</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">108</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(108)">سورة الكوثر</a></td>
-                            <td>Al-Kawthar</td>
-                            <td>Abundance</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">109</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(109)">سورة الكافرون</a></td>
-                            <td>Al-Kaafiroon</td>
-                            <td>The Disbelievers</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">110</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(110)">سورة النصر</a></td>
-                            <td>An-Nasr</td>
-                            <td>Divine Support</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">111</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(111)">سورة المسد</a></td>
-                            <td>Al-Masad</td>
-                            <td>The Palm Fibre</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">112</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(112)">سورة الإخلاص</a></td>
-                            <td>Al-Ikhlaas</td>
-                            <td>Sincerity</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">113</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(113)">سورة الفلق</a></td>
-                            <td>Al-Falaq</td>
-                            <td>The Dawn</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">114</th>
-                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(114)">سورة الناس</a></td>
-                            <td>An-Naas</td>
-                            <td>Mankind</td>
-                        </tr></tbody>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL FOR SURA NAME AND AYAH -->
-    <div class="modal search-modal fade" id="query-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Query Form</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" class="text-danger">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form class="query-form" id="query-quran">
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <label class="sr-only" for="suraNameSelect">Sura Name Select</label>
-                                <select class="form-control" id="suraNameSelect" form="query-quran" name="suraid">
-                                    <option value="1" ayahs="7">1. Al-Faatiha (7)</option>
-                                    <option value="2" ayahs="286">2. Al-Baqara (286)</option>
-                                    <option value="3" ayahs="200">3. Aal-i-Imraan (200)</option>
-                                    <option value="4" ayahs="176">4. An-Nisaa (176)</option>
-                                    <option value="5" ayahs="120">5. Al-Maaida (120)</option>
-                                    <option value="6" ayahs="165">6. Al-An'aam (165)</option>
-                                    <option value="7" ayahs="206">7. Al-A'raaf (206)</option>
-                                    <option value="8" ayahs="75">8. Al-Anfaal (75)</option>
-                                    <option value="9" ayahs="129">9. At-Tawba (129)</option>
-                                    <option value="10" ayahs="109">10. Yunus (109)</option>
-                                    <option value="11" ayahs="123">11. Hud (123)</option>
-                                    <option value="12" ayahs="111">12. Yusuf (111)</option>
-                                    <option value="13" ayahs="43">13. Ar-Ra'd (43)</option>
-                                    <option value="14" ayahs="52">14. Ibrahim (52)</option>
-                                    <option value="15" ayahs="99">15. Al-Hijr (99)</option>
-                                    <option value="16" ayahs="128">16. An-Nahl (128)</option>
-                                    <option value="17" ayahs="111">17. Al-Israa (111)</option>
-                                    <option value="18" ayahs="110">18. Al-Kahf (110)</option>
-                                    <option value="19" ayahs="98">19. Maryam (98)</option>
-                                    <option value="20" ayahs="135">20. Taa-Haa (135)</option>
-                                    <option value="21" ayahs="112">21. Al-Anbiyaa (112)</option>
-                                    <option value="22" ayahs="78">22. Al-Hajj (78)</option>
-                                    <option value="23" ayahs="118">23. Al-Muminoon (118)</option>
-                                    <option value="24" ayahs="64">24. An-Noor (64)</option>
-                                    <option value="25" ayahs="77">25. Al-Furqaan (77)</option>
-                                    <option value="26" ayahs="227">26. Ash-Shu'araa (227)</option>
-                                    <option value="27" ayahs="93">27. An-Naml (93)</option>
-                                    <option value="28" ayahs="88">28. Al-Qasas (88)</option>
-                                    <option value="29" ayahs="69">29. Al-Ankaboot (69)</option>
-                                    <option value="30" ayahs="60">30. Ar-Room (60)</option>
-                                    <option value="31" ayahs="34">31. Luqman (34)</option>
-                                    <option value="32" ayahs="30">32. As-Sajda (30)</option>
-                                    <option value="33" ayahs="73">33. Al-Ahzaab (73)</option>
-                                    <option value="34" ayahs="54">34. Saba (54)</option>
-                                    <option value="35" ayahs="45">35. Faatir (45)</option>
-                                    <option value="36" ayahs="83">36. Yaseen (83)</option>
-                                    <option value="37" ayahs="182">37. As-Saaffaat (182)</option>
-                                    <option value="38" ayahs="88">38. Saad (88)</option>
-                                    <option value="39" ayahs="75">39. Az-Zumar (75)</option>
-                                    <option value="40" ayahs="85">40. Ghafir (85)</option>
-                                    <option value="41" ayahs="54">41. Fussilat (54)</option>
-                                    <option value="42" ayahs="53">42. Ash-Shura (53)</option>
-                                    <option value="43" ayahs="89">43. Az-Zukhruf (89)</option>
-                                    <option value="44" ayahs="59">44. Ad-Dukhaan (59)</option>
-                                    <option value="45" ayahs="37">45. Al-Jaathiya (37)</option>
-                                    <option value="46" ayahs="35">46. Al-Ahqaf (35)</option>
-                                    <option value="47" ayahs="38">47. Muhammad (38)</option>
-                                    <option value="48" ayahs="29">48. Al-Fath (29)</option>
-                                    <option value="49" ayahs="18">49. Al-Hujuraat (18)</option>
-                                    <option value="50" ayahs="45">50. Qaaf (45)</option>
-                                    <option value="51" ayahs="60">51. Adh-Dhaariyat (60)</option>
-                                    <option value="52" ayahs="49">52. At-Tur (49)</option>
-                                    <option value="53" ayahs="62">53. An-Najm (62)</option>
-                                    <option value="54" ayahs="55">54. Al-Qamar (55)</option>
-                                    <option value="55" ayahs="78">55. Ar-Rahmaan (78)</option>
-                                    <option value="56" ayahs="96">56. Al-Waaqia (96)</option>
-                                    <option value="57" ayahs="29">57. Al-Hadid (29)</option>
-                                    <option value="58" ayahs="22">58. Al-Mujaadila (22)</option>
-                                    <option value="59" ayahs="24">59. Al-Hashr (24)</option>
-                                    <option value="60" ayahs="13">60. Al-Mumtahana (13)</option>
-                                    <option value="61" ayahs="14">61. As-Saff (14)</option>
-                                    <option value="62" ayahs="11">62. Al-Jumu'a (11)</option>
-                                    <option value="63" ayahs="11">63. Al-Munaafiqoon (11)</option>
-                                    <option value="64" ayahs="18">64. At-Taghaabun (18)</option>
-                                    <option value="65" ayahs="12">65. At-Talaaq (12)</option>
-                                    <option value="66" ayahs="12">66. At-Tahrim (12)</option>
-                                    <option value="67" ayahs="30">67. Al-Mulk (30)</option>
-                                    <option value="68" ayahs="52">68. Al-Qalam (52)</option>
-                                    <option value="69" ayahs="52">69. Al-Haaqqa (52)</option>
-                                    <option value="70" ayahs="44">70. Al-Ma'aarij (44)</option>
-                                    <option value="71" ayahs="28">71. Nooh (28)</option>
-                                    <option value="72" ayahs="28">72. Al-Jinn (28)</option>
-                                    <option value="73" ayahs="20">73. Al-Muzzammil (20)</option>
-                                    <option value="74" ayahs="56">74. Al-Muddaththir (56)</option>
-                                    <option value="75" ayahs="40">75. Al-Qiyaama (40)</option>
-                                    <option value="76" ayahs="31">76. Al-Insaan (31)</option>
-                                    <option value="77" ayahs="50">77. Al-Mursalaat (50)</option>
-                                    <option value="78" ayahs="40">78. An-Naba (40)</option>
-                                    <option value="79" ayahs="46">79. An-Naazi'aat (46)</option>
-                                    <option value="80" ayahs="42">80. Abasa (42)</option>
-                                    <option value="81" ayahs="29">81. At-Takwir (29)</option>
-                                    <option value="82" ayahs="19">82. Al-Infitaar (19)</option>
-                                    <option value="83" ayahs="36">83. Al-Mutaffifin (36)</option>
-                                    <option value="84" ayahs="25">84. Al-Inshiqaaq (25)</option>
-                                    <option value="85" ayahs="22">85. Al-Burooj (22)</option>
-                                    <option value="86" ayahs="17">86. At-Taariq (17)</option>
-                                    <option value="87" ayahs="19">87. Al-A'laa (19)</option>
-                                    <option value="88" ayahs="26">88. Al-Ghaashiya (26)</option>
-                                    <option value="89" ayahs="30">89. Al-Fajr (30)</option>
-                                    <option value="90" ayahs="20">90. Al-Balad (20)</option>
-                                    <option value="91" ayahs="15">91. Ash-Shams (15)</option>
-                                    <option value="92" ayahs="21">92. Al-Lail (21)</option>
-                                    <option value="93" ayahs="11">93. Ad-Dhuhaa (11)</option>
-                                    <option value="94" ayahs="8">94. Ash-Sharh (8)</option>
-                                    <option value="95" ayahs="8">95. At-Tin (8)</option>
-                                    <option value="96" ayahs="19">96. Al-Alaq (19)</option>
-                                    <option value="97" ayahs="5">97. Al-Qadr (5)</option>
-                                    <option value="98" ayahs="8">98. Al-Bayyina (8)</option>
-                                    <option value="99" ayahs="8">99. Az-Zalzala (8)</option>
-                                    <option value="100" ayahs="11">100. Al-Aadiyaat (11)</option>
-                                    <option value="101" ayahs="11">101. Al-Qaari'a (11)</option>
-                                    <option value="102" ayahs="8">102. At-Takaathur (8)</option>
-                                    <option value="103" ayahs="3">103. Al-Asr (3)</option>
-                                    <option value="104" ayahs="9">104. Al-Humaza (9)</option>
-                                    <option value="105" ayahs="5">105. Al-Fil (5)</option>
-                                    <option value="106" ayahs="4">106. Quraish (4)</option>
-                                    <option value="107" ayahs="7">107. Al-Maa'un (7)</option>
-                                    <option value="108" ayahs="3">108. Al-Kawthar (3)</option>
-                                    <option value="109" ayahs="6">109. Al-Kaafiroon (6)</option>
-                                    <option value="110" ayahs="3">110. An-Nasr (3)</option>
-                                    <option value="111" ayahs="5">111. Al-Masad (5)</option>
-                                    <option value="112" ayahs="4">112. Al-Ikhlaas (4)</option>
-                                    <option value="113" ayahs="5">113. Al-Falaq (5)</option>
-                                    <option value="114" ayahs="6">114. An-Naas (6)</option>
-                                </select>
-                            </div>
-                            <input type="number" class="form-control" aria-label="Number field with select element" placeholder="Verse Number" name="ayahno" min="1" required autofocus>
-                        </div>
-                        <div class="text-center">
-                            <input type="submit" value="Submit Query" class="btn btn-outline-info">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- NAVIGATION -->
     <nav class="navbar navbar-light fixed-top justify-content-between" style="background-color: #e3f2fd;">
         <a class="navbar-brand" href="index.html">Al Quran</a>
@@ -891,8 +31,871 @@
             <button class="btn btn-info" type="button" data-toggle="modal" data-target="#index">Chapters</button>
         </form>
     </nav>
+    <!-- MODAL CONTAINER -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <!--  Modal CHAPTERS -->
+                <div class="modal fade chapter-modal" id="index" tabindex="-1" role="dialog" aria-labelledby="index" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">All Chapters</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="table table-responsive table-hover">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">English</th>
+                                            <th scope="col">Translation(en)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="chapters">
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(1)">سورة الفاتحة</a></td>
+                                            <td>Al-Faatiha</td>
+                                            <td>The Opening</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(2)">سورة البقرة</a></td>
+                                            <td>Al-Baqara</td>
+                                            <td>The Cow</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(3)">سورة آل عمران</a></td>
+                                            <td>Aal-i-Imraan</td>
+                                            <td>The Family of Imraan</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(4)">سورة النساء</a></td>
+                                            <td>An-Nisaa</td>
+                                            <td>The Women</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(5)">سورة المائدة</a></td>
+                                            <td>Al-Maaida</td>
+                                            <td>The Table</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(6)">سورة الأنعام</a></td>
+                                            <td>Al-An'aam</td>
+                                            <td>The Cattle</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(7)">سورة الأعراف</a></td>
+                                            <td>Al-A'raaf</td>
+                                            <td>The Heights</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(8)">سورة الأنفال</a></td>
+                                            <td>Al-Anfaal</td>
+                                            <td>The Spoils of War</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(9)">سورة التوبة</a></td>
+                                            <td>At-Tawba</td>
+                                            <td>The Repentance</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(10)">سورة يونس</a></td>
+                                            <td>Yunus</td>
+                                            <td>Jonas</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(11)">سورة هود</a></td>
+                                            <td>Hud</td>
+                                            <td>Hud</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(12)">سورة يوسف</a></td>
+                                            <td>Yusuf</td>
+                                            <td>Joseph</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(13)">سورة الرعد</a></td>
+                                            <td>Ar-Ra'd</td>
+                                            <td>The Thunder</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(14)">سورة ابراهيم</a></td>
+                                            <td>Ibrahim</td>
+                                            <td>Abraham</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">15</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(15)">سورة الحجر</a></td>
+                                            <td>Al-Hijr</td>
+                                            <td>The Rock</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">16</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(16)">سورة النحل</a></td>
+                                            <td>An-Nahl</td>
+                                            <td>The Bee</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">17</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(17)">سورة الإسراء</a></td>
+                                            <td>Al-Israa</td>
+                                            <td>The Night Journey</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">18</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(18)">سورة الكهف</a></td>
+                                            <td>Al-Kahf</td>
+                                            <td>The Cave</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">19</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(19)">سورة مريم</a></td>
+                                            <td>Maryam</td>
+                                            <td>Mary</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">20</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(20)">سورة طه</a></td>
+                                            <td>Taa-Haa</td>
+                                            <td>Taa-Haa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">21</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(21)">سورة الأنبياء</a></td>
+                                            <td>Al-Anbiyaa</td>
+                                            <td>The Prophets</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">22</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(22)">سورة الحج</a></td>
+                                            <td>Al-Hajj</td>
+                                            <td>The Pilgrimage</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">23</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(23)">سورة المؤمنون</a></td>
+                                            <td>Al-Muminoon</td>
+                                            <td>The Believers</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">24</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(24)">سورة النور</a></td>
+                                            <td>An-Noor</td>
+                                            <td>The Light</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">25</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(25)">سورة الفرقان</a></td>
+                                            <td>Al-Furqaan</td>
+                                            <td>The Criterion</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">26</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(26)">سورة الشعراء</a></td>
+                                            <td>Ash-Shu'araa</td>
+                                            <td>The Poets</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">27</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(27)">سورة النمل</a></td>
+                                            <td>An-Naml</td>
+                                            <td>The Ant</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">28</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(28)">سورة القصص</a></td>
+                                            <td>Al-Qasas</td>
+                                            <td>The Stories</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">29</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(29)">سورة العنكبوت</a></td>
+                                            <td>Al-Ankaboot</td>
+                                            <td>The Spider</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">30</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(30)">سورة الروم</a></td>
+                                            <td>Ar-Room</td>
+                                            <td>The Romans</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">31</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(31)">سورة لقمان</a></td>
+                                            <td>Luqman</td>
+                                            <td>Luqman</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">32</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(32)">سورة السجدة</a></td>
+                                            <td>As-Sajda</td>
+                                            <td>The Prostration</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">33</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(33)">سورة الأحزاب</a></td>
+                                            <td>Al-Ahzaab</td>
+                                            <td>The Clans</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(34)">سورة سبإ</a></td>
+                                            <td>Saba</td>
+                                            <td>Sheba</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">35</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(35)">سورة فاطر</a></td>
+                                            <td>Faatir</td>
+                                            <td>The Originator</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">36</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(36)">سورة يس</a></td>
+                                            <td>Yaseen</td>
+                                            <td>Yaseen</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">37</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(37)">سورة الصافات</a></td>
+                                            <td>As-Saaffaat</td>
+                                            <td>Those drawn up in Ranks</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">38</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(38)">سورة ص</a></td>
+                                            <td>Saad</td>
+                                            <td>The letter Saad</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">39</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(39)">سورة الزمر</a></td>
+                                            <td>Az-Zumar</td>
+                                            <td>The Groups</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">40</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(40)">سورة غافر</a></td>
+                                            <td>Ghafir</td>
+                                            <td>The Forgiver</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">41</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(41)">سورة فصلت</a></td>
+                                            <td>Fussilat</td>
+                                            <td>Explained in detail</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">42</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(42)">سورة الشورى</a></td>
+                                            <td>Ash-Shura</td>
+                                            <td>Consultation</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">43</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(43)">سورة الزخرف</a></td>
+                                            <td>Az-Zukhruf</td>
+                                            <td>Ornaments of gold</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">44</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(44)">سورة الدخان</a></td>
+                                            <td>Ad-Dukhaan</td>
+                                            <td>The Smoke</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">45</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(45)">سورة الجاثية</a></td>
+                                            <td>Al-Jaathiya</td>
+                                            <td>Crouching</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">46</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(46)">سورة الأحقاف</a></td>
+                                            <td>Al-Ahqaf</td>
+                                            <td>The Dunes</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">47</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(47)">سورة محمد</a></td>
+                                            <td>Muhammad</td>
+                                            <td>Muhammad</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">48</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(48)">سورة الفتح</a></td>
+                                            <td>Al-Fath</td>
+                                            <td>The Victory</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">49</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(49)">سورة الحجرات</a></td>
+                                            <td>Al-Hujuraat</td>
+                                            <td>The Inner Apartments</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">50</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(50)">سورة ق</a></td>
+                                            <td>Qaaf</td>
+                                            <td>The letter Qaaf</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">51</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(51)">سورة الذاريات</a></td>
+                                            <td>Adh-Dhaariyat</td>
+                                            <td>The Winnowing Winds</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">52</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(52)">سورة الطور</a></td>
+                                            <td>At-Tur</td>
+                                            <td>The Mount</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">53</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(53)">سورة النجم</a></td>
+                                            <td>An-Najm</td>
+                                            <td>The Star</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">54</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(54)">سورة القمر</a></td>
+                                            <td>Al-Qamar</td>
+                                            <td>The Moon</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">55</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(55)">سورة الرحمن</a></td>
+                                            <td>Ar-Rahmaan</td>
+                                            <td>The Beneficent</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">56</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(56)">سورة الواقعة</a></td>
+                                            <td>Al-Waaqia</td>
+                                            <td>The Inevitable</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">57</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(57)">سورة الحديد</a></td>
+                                            <td>Al-Hadid</td>
+                                            <td>The Iron</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">58</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(58)">سورة المجادلة</a></td>
+                                            <td>Al-Mujaadila</td>
+                                            <td>The Pleading Woman</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">59</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(59)">سورة الحشر</a></td>
+                                            <td>Al-Hashr</td>
+                                            <td>The Exile</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">60</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(60)">سورة الممتحنة</a></td>
+                                            <td>Al-Mumtahana</td>
+                                            <td>She that is to be examined</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">61</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(61)">سورة الصف</a></td>
+                                            <td>As-Saff</td>
+                                            <td>The Ranks</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">62</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(62)">سورة الجمعة</a></td>
+                                            <td>Al-Jumu'a</td>
+                                            <td>Friday</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">63</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(63)">سورة المنافقون</a></td>
+                                            <td>Al-Munaafiqoon</td>
+                                            <td>The Hypocrites</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">64</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(64)">سورة التغابن</a></td>
+                                            <td>At-Taghaabun</td>
+                                            <td>Mutual Disillusion</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">65</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(65)">سورة الطلاق</a></td>
+                                            <td>At-Talaaq</td>
+                                            <td>Divorce</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">66</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(66)">سورة التحريم</a></td>
+                                            <td>At-Tahrim</td>
+                                            <td>The Prohibition</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">67</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(67)">سورة الملك</a></td>
+                                            <td>Al-Mulk</td>
+                                            <td>The Sovereignty</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">68</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(68)">سورة القلم</a></td>
+                                            <td>Al-Qalam</td>
+                                            <td>The Pen</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">69</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(69)">سورة الحاقة</a></td>
+                                            <td>Al-Haaqqa</td>
+                                            <td>The Reality</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">70</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(70)">سورة المعارج</a></td>
+                                            <td>Al-Ma'aarij</td>
+                                            <td>The Ascending Stairways</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">71</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(71)">سورة نوح</a></td>
+                                            <td>Nooh</td>
+                                            <td>Noah</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">72</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(72)">سورة الجن</a></td>
+                                            <td>Al-Jinn</td>
+                                            <td>The Jinn</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">73</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(73)">سورة المزمل</a></td>
+                                            <td>Al-Muzzammil</td>
+                                            <td>The Enshrouded One</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">74</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(74)">سورة المدثر</a></td>
+                                            <td>Al-Muddaththir</td>
+                                            <td>The Cloaked One</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">75</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(75)">سورة القيامة</a></td>
+                                            <td>Al-Qiyaama</td>
+                                            <td>The Resurrection</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">76</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(76)">سورة الانسان</a></td>
+                                            <td>Al-Insaan</td>
+                                            <td>Man</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">77</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(77)">سورة المرسلات</a></td>
+                                            <td>Al-Mursalaat</td>
+                                            <td>The Emissaries</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">78</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(78)">سورة النبإ</a></td>
+                                            <td>An-Naba</td>
+                                            <td>The Announcement</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">79</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(79)">سورة النازعات</a></td>
+                                            <td>An-Naazi'aat</td>
+                                            <td>Those who drag forth</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">80</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(80)">سورة عبس</a></td>
+                                            <td>Abasa</td>
+                                            <td>He frowned</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">81</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(81)">سورة التكوير</a></td>
+                                            <td>At-Takwir</td>
+                                            <td>The Overthrowing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">82</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(82)">سورة الإنفطار</a></td>
+                                            <td>Al-Infitaar</td>
+                                            <td>The Cleaving</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">83</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(83)">سورة المطففين</a></td>
+                                            <td>Al-Mutaffifin</td>
+                                            <td>Defrauding</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">84</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(84)">سورة الإنشقاق</a></td>
+                                            <td>Al-Inshiqaaq</td>
+                                            <td>The Splitting Open</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">85</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(85)">سورة البروج</a></td>
+                                            <td>Al-Burooj</td>
+                                            <td>The Constellations</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">86</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(86)">سورة الطارق</a></td>
+                                            <td>At-Taariq</td>
+                                            <td>The Morning Star</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">87</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(87)">سورة الأعلى</a></td>
+                                            <td>Al-A'laa</td>
+                                            <td>The Most High</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">88</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(88)">سورة الغاشية</a></td>
+                                            <td>Al-Ghaashiya</td>
+                                            <td>The Overwhelming</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">89</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(89)">سورة الفجر</a></td>
+                                            <td>Al-Fajr</td>
+                                            <td>The Dawn</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">90</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(90)">سورة البلد</a></td>
+                                            <td>Al-Balad</td>
+                                            <td>The City</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">91</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(91)">سورة الشمس</a></td>
+                                            <td>Ash-Shams</td>
+                                            <td>The Sun</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">92</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(92)">سورة الليل</a></td>
+                                            <td>Al-Lail</td>
+                                            <td>The Night</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">93</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(93)">سورة الضحى</a></td>
+                                            <td>Ad-Dhuhaa</td>
+                                            <td>The Morning Hours</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">94</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(94)">سورة الشرح</a></td>
+                                            <td>Ash-Sharh</td>
+                                            <td>The Consolation</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">95</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(95)">سورة التين</a></td>
+                                            <td>At-Tin</td>
+                                            <td>The Fig</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">96</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(96)">سورة العلق</a></td>
+                                            <td>Al-Alaq</td>
+                                            <td>The Clot</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">97</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(97)">سورة القدر</a></td>
+                                            <td>Al-Qadr</td>
+                                            <td>The Power, Fate</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">98</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(98)">سورة البينة</a></td>
+                                            <td>Al-Bayyina</td>
+                                            <td>The Evidence</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">99</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(99)">سورة الزلزلة</a></td>
+                                            <td>Az-Zalzala</td>
+                                            <td>The Earthquake</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">100</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(100)">سورة العاديات</a></td>
+                                            <td>Al-Aadiyaat</td>
+                                            <td>The Chargers</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">101</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(101)">سورة القارعة</a></td>
+                                            <td>Al-Qaari'a</td>
+                                            <td>The Calamity</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">102</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(102)">سورة التكاثر</a></td>
+                                            <td>At-Takaathur</td>
+                                            <td>Competition</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">103</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(103)">سورة العصر</a></td>
+                                            <td>Al-Asr</td>
+                                            <td>The Declining Day, Epoch</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">104</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(104)">سورة الهمزة</a></td>
+                                            <td>Al-Humaza</td>
+                                            <td>The Traducer</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">105</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(105)">سورة الفيل</a></td>
+                                            <td>Al-Fil</td>
+                                            <td>The Elephant</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">106</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(106)">سورة قريش</a></td>
+                                            <td>Quraish</td>
+                                            <td>Quraysh</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">107</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(107)">سورة الماعون</a></td>
+                                            <td>Al-Maa'un</td>
+                                            <td>Almsgiving</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">108</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(108)">سورة الكوثر</a></td>
+                                            <td>Al-Kawthar</td>
+                                            <td>Abundance</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">109</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(109)">سورة الكافرون</a></td>
+                                            <td>Al-Kaafiroon</td>
+                                            <td>The Disbelievers</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">110</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(110)">سورة النصر</a></td>
+                                            <td>An-Nasr</td>
+                                            <td>Divine Support</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">111</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(111)">سورة المسد</a></td>
+                                            <td>Al-Masad</td>
+                                            <td>The Palm Fibre</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">112</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(112)">سورة الإخلاص</a></td>
+                                            <td>Al-Ikhlaas</td>
+                                            <td>Sincerity</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">113</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(113)">سورة الفلق</a></td>
+                                            <td>Al-Falaq</td>
+                                            <td>The Dawn</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">114</th>
+                                            <td><a href="#" class="sura-name-ar text-primary" onclick="loadSura(114)">سورة الناس</a></td>
+                                            <td>An-Naas</td>
+                                            <td>Mankind</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL FOR SURA NAME AND AYAH -->
+                <div class="modal search-modal fade" id="query-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Query Form</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="text-danger">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="query-form" id="query-quran">
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <label class="sr-only" for="suraNameSelect">Sura Name Select</label>
+                                            <select class="form-control" id="suraNameSelect" form="query-quran" name="suraid">
+                                                <option value="1" ayahs="7">1. Al-Faatiha (7)</option>
+                                                <option value="2" ayahs="286">2. Al-Baqara (286)</option>
+                                                <option value="3" ayahs="200">3. Aal-i-Imraan (200)</option>
+                                                <option value="4" ayahs="176">4. An-Nisaa (176)</option>
+                                                <option value="5" ayahs="120">5. Al-Maaida (120)</option>
+                                                <option value="6" ayahs="165">6. Al-An'aam (165)</option>
+                                                <option value="7" ayahs="206">7. Al-A'raaf (206)</option>
+                                                <option value="8" ayahs="75">8. Al-Anfaal (75)</option>
+                                                <option value="9" ayahs="129">9. At-Tawba (129)</option>
+                                                <option value="10" ayahs="109">10. Yunus (109)</option>
+                                                <option value="11" ayahs="123">11. Hud (123)</option>
+                                                <option value="12" ayahs="111">12. Yusuf (111)</option>
+                                                <option value="13" ayahs="43">13. Ar-Ra'd (43)</option>
+                                                <option value="14" ayahs="52">14. Ibrahim (52)</option>
+                                                <option value="15" ayahs="99">15. Al-Hijr (99)</option>
+                                                <option value="16" ayahs="128">16. An-Nahl (128)</option>
+                                                <option value="17" ayahs="111">17. Al-Israa (111)</option>
+                                                <option value="18" ayahs="110">18. Al-Kahf (110)</option>
+                                                <option value="19" ayahs="98">19. Maryam (98)</option>
+                                                <option value="20" ayahs="135">20. Taa-Haa (135)</option>
+                                                <option value="21" ayahs="112">21. Al-Anbiyaa (112)</option>
+                                                <option value="22" ayahs="78">22. Al-Hajj (78)</option>
+                                                <option value="23" ayahs="118">23. Al-Muminoon (118)</option>
+                                                <option value="24" ayahs="64">24. An-Noor (64)</option>
+                                                <option value="25" ayahs="77">25. Al-Furqaan (77)</option>
+                                                <option value="26" ayahs="227">26. Ash-Shu'araa (227)</option>
+                                                <option value="27" ayahs="93">27. An-Naml (93)</option>
+                                                <option value="28" ayahs="88">28. Al-Qasas (88)</option>
+                                                <option value="29" ayahs="69">29. Al-Ankaboot (69)</option>
+                                                <option value="30" ayahs="60">30. Ar-Room (60)</option>
+                                                <option value="31" ayahs="34">31. Luqman (34)</option>
+                                                <option value="32" ayahs="30">32. As-Sajda (30)</option>
+                                                <option value="33" ayahs="73">33. Al-Ahzaab (73)</option>
+                                                <option value="34" ayahs="54">34. Saba (54)</option>
+                                                <option value="35" ayahs="45">35. Faatir (45)</option>
+                                                <option value="36" ayahs="83">36. Yaseen (83)</option>
+                                                <option value="37" ayahs="182">37. As-Saaffaat (182)</option>
+                                                <option value="38" ayahs="88">38. Saad (88)</option>
+                                                <option value="39" ayahs="75">39. Az-Zumar (75)</option>
+                                                <option value="40" ayahs="85">40. Ghafir (85)</option>
+                                                <option value="41" ayahs="54">41. Fussilat (54)</option>
+                                                <option value="42" ayahs="53">42. Ash-Shura (53)</option>
+                                                <option value="43" ayahs="89">43. Az-Zukhruf (89)</option>
+                                                <option value="44" ayahs="59">44. Ad-Dukhaan (59)</option>
+                                                <option value="45" ayahs="37">45. Al-Jaathiya (37)</option>
+                                                <option value="46" ayahs="35">46. Al-Ahqaf (35)</option>
+                                                <option value="47" ayahs="38">47. Muhammad (38)</option>
+                                                <option value="48" ayahs="29">48. Al-Fath (29)</option>
+                                                <option value="49" ayahs="18">49. Al-Hujuraat (18)</option>
+                                                <option value="50" ayahs="45">50. Qaaf (45)</option>
+                                                <option value="51" ayahs="60">51. Adh-Dhaariyat (60)</option>
+                                                <option value="52" ayahs="49">52. At-Tur (49)</option>
+                                                <option value="53" ayahs="62">53. An-Najm (62)</option>
+                                                <option value="54" ayahs="55">54. Al-Qamar (55)</option>
+                                                <option value="55" ayahs="78">55. Ar-Rahmaan (78)</option>
+                                                <option value="56" ayahs="96">56. Al-Waaqia (96)</option>
+                                                <option value="57" ayahs="29">57. Al-Hadid (29)</option>
+                                                <option value="58" ayahs="22">58. Al-Mujaadila (22)</option>
+                                                <option value="59" ayahs="24">59. Al-Hashr (24)</option>
+                                                <option value="60" ayahs="13">60. Al-Mumtahana (13)</option>
+                                                <option value="61" ayahs="14">61. As-Saff (14)</option>
+                                                <option value="62" ayahs="11">62. Al-Jumu'a (11)</option>
+                                                <option value="63" ayahs="11">63. Al-Munaafiqoon (11)</option>
+                                                <option value="64" ayahs="18">64. At-Taghaabun (18)</option>
+                                                <option value="65" ayahs="12">65. At-Talaaq (12)</option>
+                                                <option value="66" ayahs="12">66. At-Tahrim (12)</option>
+                                                <option value="67" ayahs="30">67. Al-Mulk (30)</option>
+                                                <option value="68" ayahs="52">68. Al-Qalam (52)</option>
+                                                <option value="69" ayahs="52">69. Al-Haaqqa (52)</option>
+                                                <option value="70" ayahs="44">70. Al-Ma'aarij (44)</option>
+                                                <option value="71" ayahs="28">71. Nooh (28)</option>
+                                                <option value="72" ayahs="28">72. Al-Jinn (28)</option>
+                                                <option value="73" ayahs="20">73. Al-Muzzammil (20)</option>
+                                                <option value="74" ayahs="56">74. Al-Muddaththir (56)</option>
+                                                <option value="75" ayahs="40">75. Al-Qiyaama (40)</option>
+                                                <option value="76" ayahs="31">76. Al-Insaan (31)</option>
+                                                <option value="77" ayahs="50">77. Al-Mursalaat (50)</option>
+                                                <option value="78" ayahs="40">78. An-Naba (40)</option>
+                                                <option value="79" ayahs="46">79. An-Naazi'aat (46)</option>
+                                                <option value="80" ayahs="42">80. Abasa (42)</option>
+                                                <option value="81" ayahs="29">81. At-Takwir (29)</option>
+                                                <option value="82" ayahs="19">82. Al-Infitaar (19)</option>
+                                                <option value="83" ayahs="36">83. Al-Mutaffifin (36)</option>
+                                                <option value="84" ayahs="25">84. Al-Inshiqaaq (25)</option>
+                                                <option value="85" ayahs="22">85. Al-Burooj (22)</option>
+                                                <option value="86" ayahs="17">86. At-Taariq (17)</option>
+                                                <option value="87" ayahs="19">87. Al-A'laa (19)</option>
+                                                <option value="88" ayahs="26">88. Al-Ghaashiya (26)</option>
+                                                <option value="89" ayahs="30">89. Al-Fajr (30)</option>
+                                                <option value="90" ayahs="20">90. Al-Balad (20)</option>
+                                                <option value="91" ayahs="15">91. Ash-Shams (15)</option>
+                                                <option value="92" ayahs="21">92. Al-Lail (21)</option>
+                                                <option value="93" ayahs="11">93. Ad-Dhuhaa (11)</option>
+                                                <option value="94" ayahs="8">94. Ash-Sharh (8)</option>
+                                                <option value="95" ayahs="8">95. At-Tin (8)</option>
+                                                <option value="96" ayahs="19">96. Al-Alaq (19)</option>
+                                                <option value="97" ayahs="5">97. Al-Qadr (5)</option>
+                                                <option value="98" ayahs="8">98. Al-Bayyina (8)</option>
+                                                <option value="99" ayahs="8">99. Az-Zalzala (8)</option>
+                                                <option value="100" ayahs="11">100. Al-Aadiyaat (11)</option>
+                                                <option value="101" ayahs="11">101. Al-Qaari'a (11)</option>
+                                                <option value="102" ayahs="8">102. At-Takaathur (8)</option>
+                                                <option value="103" ayahs="3">103. Al-Asr (3)</option>
+                                                <option value="104" ayahs="9">104. Al-Humaza (9)</option>
+                                                <option value="105" ayahs="5">105. Al-Fil (5)</option>
+                                                <option value="106" ayahs="4">106. Quraish (4)</option>
+                                                <option value="107" ayahs="7">107. Al-Maa'un (7)</option>
+                                                <option value="108" ayahs="3">108. Al-Kawthar (3)</option>
+                                                <option value="109" ayahs="6">109. Al-Kaafiroon (6)</option>
+                                                <option value="110" ayahs="3">110. An-Nasr (3)</option>
+                                                <option value="111" ayahs="5">111. Al-Masad (5)</option>
+                                                <option value="112" ayahs="4">112. Al-Ikhlaas (4)</option>
+                                                <option value="113" ayahs="5">113. Al-Falaq (5)</option>
+                                                <option value="114" ayahs="6">114. An-Naas (6)</option>
+                                            </select>
+                                        </div>
+                                        <input type="number" class="form-control" aria-label="Number field with select element" placeholder="Verse Number" name="ayahno" min="1" required autofocus>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="submit" value="Submit Query" class="btn btn-outline-info">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
+    <!-- MAIN --> 
     <main class="content-body-wrapper">
         <!-- SEARCH BOX -->
         <div class="container search-word py-5">
@@ -908,7 +911,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- WRAPPER FOR AYAH -->
         <div class="render-ayahas container text-center">
             <div class="row surah-single">
@@ -917,11 +919,9 @@
             </div>
         </div>
     </main>
-   
     <footer class="footer text-center my-3 text-success">
         All Rights Reserved &copy; <a target="_blank" class="text-info" href="https://linkedin.com/in/m-hasan-ru">Mahmudul Hasan</a>
     </footer>
-    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

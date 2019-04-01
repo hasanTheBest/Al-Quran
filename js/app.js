@@ -76,7 +76,8 @@ function renderAyahs(sura) {
         $.ajax({
             method: 'GET',
             url: 'http://api.alquran.cloud/v1/surah/' + suraid + '/' + translationEngBnReTr,
-            type: 'JSON',
+            crossDomain: true,
+            dataType: 'json',
             success: function(response) {
 
                 var suraTranslatedText = '',
@@ -209,7 +210,8 @@ function showSingleAyah(suraid, ayahno) {
     $.ajax({
         url: 'http://api.alquran.cloud/v1/ayah/' + suraid + ':' + ayahno,
         method: 'GET',
-        type: 'JSON',
+        crossDomain: true,
+        dataType: 'json',
         success: function(response) {
             // show single ayah
             $('ol.ayahs').append(`<li class="list-group-item bg-light"><bdo dir="rtl" class="py-3 d-block"><span class="ml-3 mb-2 sura-ayah badge badge-secondary">${response.data.surah.number}:${response.data.numberInSurah}</span> ${replaceBismillah(response.data.text)}</bdo> </li>`);
@@ -250,7 +252,8 @@ function singleAyahEngBnReTr(ayahno, engBnReTr) {
     $.ajax({
         url: 'http://api.alquran.cloud/v1/ayah/' + ayahno + '/' + engBnReTr,
         method: 'GET',
-        type: 'JSON',
+        crossDomain: true,
+        dataType: 'json',
         success: function(response) {
 
             var appendText = `<p class="text-english text-left translation">${response.data.text}</p>`;
@@ -304,7 +307,8 @@ $('.search-word-form').on('submit', function(e) {
     $.ajax({
         url: 'http://api.alquran.cloud/v1/search/' + word + '/all/en.sahih',
         method: 'GET',
-        type: 'JSON',
+        crossDomain: true,
+        dataType: 'json',
         success: function(response) {
             if (undefined == response) {
                 $('.quran-loader').hide();
